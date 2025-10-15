@@ -95,10 +95,21 @@
 
 // do-while loop
 
-i=1;
-do{
-    console.log(i)
-    i++
-}
+// i=1;
+// do{
+//     console.log(i)
+//     i++
+// }
 
-while(i<=0)
+// while(i<=0)
+
+
+// 1)function declaration
+
+function add(a,b){
+
+    let x=a+b;
+    return(x)
+}
+console.log(add(5,3));
+
