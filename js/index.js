@@ -34,7 +34,7 @@
 
 
 
-// 3)loop
+// 3)nested for loop
 
 // for(i=1;i<=5;i++)
 // {
@@ -73,13 +73,32 @@
 
 
 
-for(i=1;i<=5;i++){
+// for(i=1;i<=5;i++){
 
-    for(j=1;j<=i;j++){
+//     for(j=1;j<=i;j++){
 
-    console.log(j);                 //1 12 123 1234 12345
+//     console.log(j);                 //1 12 123 1234 12345
     
-    }
+//     }
+// }
+
+
+// while loop
+
+// i=10;
+// while(i<=20){
+
+//     console.log(i)
+//     i++
+// }
+
+
+// do-while loop
+
+i=1;
+do{
+    console.log(i)
+    i++
 }
 
-
+while(i<=0)
