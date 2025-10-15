@@ -26,11 +26,11 @@
 // let a=0;
 // console.log(Boolean(a));   //false
 
-let a=55;
-let b=56;
-console.log(b);         
+// let a=55;
+// let b=56;
+// console.log(b);         
 
-console.log(String(a));  //55
+// console.log(String(a));  //55
 
 
 
@@ -40,3 +40,23 @@ console.log(String(a));  //55
 // {
 //     console.log("hai").       //5.hai
 // }
+
+
+// for(i=1;i<=5;i++){
+
+//     for(j=1;j<=5;j++){
+
+//     console.log(j);              //12345 12345 12345 12345 12345
+    
+//     }
+// }
+
+
+for(i=1;i<=5;i++){
+
+    for(j=1;j<=5;j++){
+
+    console.log(i);                //11111 22222 33333 44444 55555
+    
+    }
+}
