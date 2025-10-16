@@ -133,21 +133,29 @@
 
 // function asd(){
 
-//     console.log("hello");
+//     console.log("hello");                //hello
     
 // }
 // asd()
 
 
-function asd(a,b){
+// function asd(a,b){
 
-   return a+b
+//    return a+b
     
-}
-console.log( asd(10,20));
+// }
+// console.log( asd(10,20));                   //30
 
 
 
+//function with argument and return
+
+function asd(a){
+
+   return a*3
+    
+ }
+ console.log( asd(5));
 
 
 
