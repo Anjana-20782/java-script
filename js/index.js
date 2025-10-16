@@ -125,6 +125,32 @@
 // while(i<=0)
 
 
+
+
+
+
+//function
+
+// function asd(){
+
+//     console.log("hello");
+    
+// }
+// asd()
+
+
+function asd(a,b){
+
+   return a+b
+    
+}
+console.log( asd(10,20));
+
+
+
+
+
+
 // 1)function declaration
 
 // function add(a,b){
@@ -204,6 +230,8 @@
 
 //recursive function
 
+
+
 // function myFunction(){
 
 //     console.log("aliyooooooo......");       //maximum call stack size executed
@@ -212,18 +240,35 @@
 // }
 // myFunction()
 
-let x=1
-function myFunction(){
 
-    console.log("aliyooooooo......");       
-    if(x<5)
-    {
-        x++
-        myFunction()
-    }
+
+// let x=1
+// function myFunction(){
+
+//     console.log("aliyooooooo......");        //aliyoooooo.....  aliyoooooo.....  aliyoooooo.....  aliyoooooo.....  aliyoooooo.....
+//     if(x<5)
+//     {
+//         x++
+//         myFunction()
+//     }
     
-}
-myFunction()
+// }
+// myFunction()
+
+
+
+// function aliya(x){
+
+   
+//     if(x<=5){
+
+//         console.log("aliyooo......."+x);
+//         aliya( x++)
+        
+//     }
+    
+// }
+// aliya(5)
 
 
 
