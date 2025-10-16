@@ -204,13 +204,29 @@
 
 //recursive function
 
+// function myFunction(){
+
+//     console.log("aliyooooooo......");       //maximum call stack size executed
+//     myFunction()
+    
+// }
+// myFunction()
+
+let x=1
 function myFunction(){
 
-    console.log("aliyooooooo......");       //maximum call stack size executed
-    myFunction()
+    console.log("aliyooooooo......");       
+    if(x<5)
+    {
+        x++
+        myFunction()
+    }
     
 }
 myFunction()
+
+
+
 
 
 
