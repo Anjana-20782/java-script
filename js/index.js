@@ -164,12 +164,20 @@
 
 //not hoisted function expression
 
-greet("welcome")
-let greet=function asd(a){
+// greet("welcome")
+// let greet=function asd(a){
 
-    console.log("hello " +a);
+//     console.log("hello " +a);
     
-}
+// }
+
+
+
+//arrow function
+
+let greet=(a,b)=>a+b
+console.log(greet(10,40));
+
 
 
 
