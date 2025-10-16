@@ -15,18 +15,23 @@
 
 
 
-var a=10;
-function myFunction(){
+// // var a=10;
+// let a=10;
+// function myFunction(){
 
-    // var a=10;
-    console.log("inside function");
-    console.log(a);
+//     // var a=10;
+//     //   let a=10;
+//     console.log("inside function");
+//     console.log(a);
     
-}
+// }
+// // myFunction();
+// console.log("outside function");
 // myFunction();
-console.log("outside function");
-myFunction();
-// console.log(a);
+// // console.log(a);
+
+
+
 
 
 
@@ -124,7 +129,7 @@ myFunction();
 
 // function add(a,b){
 
-//     let x=a+b;
+//     let x=a+b;                  //8
 //     return(x)
 // }
 // console.log(add(5,3));
@@ -133,7 +138,7 @@ myFunction();
 
 //function declaration
 //   greet("Alice"); 
-// function greet(name) {
+// function greet(name) {              //hello alice
 //   console.log("Hello, " + name);
 
 // }
@@ -144,7 +149,7 @@ myFunction();
 // let great=function add(a,b)
 // {
 //     let sums=a+b;
-//     console.log(sums);
+//     console.log(sums);            //50
     
 // }
 //  great(10,40)
@@ -156,7 +161,7 @@ myFunction();
 
 //  let car=function(name){
 
-//     console.log("hello "+name);
+//     console.log("hello "+name);          hello alice
     
 //  }
 //  car("alice")
@@ -169,7 +174,7 @@ myFunction();
 //     console.log("hey");
     
 // }
-// greet(function(){
+// greet(function(){                          
 
 //     console.log("first");
     
@@ -184,7 +189,7 @@ myFunction();
 // greet("welcome")
 // let greet=function asd(a){
 
-//     console.log("hello " +a);
+//     console.log("hello " +a);           //cannot acess grett before initialisation
     
 // }
 
@@ -193,11 +198,19 @@ myFunction();
 //arrow function
 
 // let greet=(a,b)=>a+b
-// console.log(greet(10,40));
+// console.log(greet(10,40));              //50
 
 
 
 //recursive function
+
+function myFunction(){
+
+    console.log("aliyooooooo......");       //maximum call stack size executed
+    myFunction()
+    
+}
+myFunction()
 
 
 
