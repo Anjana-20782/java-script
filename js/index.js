@@ -150,12 +150,23 @@
 
 //function with argument and return
 
-function asd(a){
+// function asd(a){
 
-   return a*3
+//    return a*3                            //15(function withn argument and return)
+    
+//  }
+//  console.log( asd(5));
+
+
+
+//function with return
+
+function asd(){
+
+   return 6*3                               //18(function with return)
     
  }
- console.log( asd(5));
+ console.log( asd());
 
 
 
