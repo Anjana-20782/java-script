@@ -13,6 +13,23 @@
 // console.log(a);      //0
 
 
+
+
+var a=10;
+function myFunction(){
+
+    // var a=10;
+    console.log("inside function");
+    console.log(a);
+    
+}
+// myFunction();
+console.log("outside function");
+myFunction();
+// console.log(a);
+
+
+
 // 2)Datatypes
 
 //  let a="";
@@ -175,8 +192,14 @@
 
 //arrow function
 
-let greet=(a,b)=>a+b
-console.log(greet(10,40));
+// let greet=(a,b)=>a+b
+// console.log(greet(10,40));
+
+
+
+//recursive function
+
+
 
 
 
