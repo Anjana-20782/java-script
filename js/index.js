@@ -99,17 +99,25 @@
 // do{
 //     console.log(i)
 //     i++
-// }
 
 // while(i<=0)
 
 
 // 1)function declaration
 
-function add(a,b){
+// function add(a,b){
 
-    let x=a+b;
-    return(x)
+//     let x=a+b;
+//     return(x)
+// }
+// console.log(add(5,3));
+
+
+  greet("Alice"); 
+function greet(name) {
+  console.log("Hello, " + name);
+
 }
-console.log(add(5,3));
+
+
 
