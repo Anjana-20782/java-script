@@ -161,12 +161,14 @@
 
 //function with return
 
-function asd(){
+// function asd(){
 
-   return 6*3                               //18(function with return)
+//    return 6*3                               //18(function with return)
     
- }
- console.log( asd());
+//  }
+//  console.log( asd());
+
+
 
 
 
@@ -212,7 +214,7 @@ function asd(){
 //  car("alice")
 
 
-
+   
 
 // function greet(){
 
@@ -288,6 +290,19 @@ function asd(){
     
 // }
 // aliya(5)
+
+
+
+function asd(n){
+
+    if(n==0){
+
+        return 1;
+    }
+    return n * asd(n-1);
+}
+console.log(asd(5));
+
 
 
 
