@@ -121,23 +121,57 @@
 
 // }
 
+
+
 //function expression
-let great=function add(a,b)
-{
-    let sums=a+b;
-    console.log(sums);
+// let great=function add(a,b)
+// {
+//     let sums=a+b;
+//     console.log(sums);
     
-}
- great(10,40)
+// }
+//  great(10,40)
+
+
 
 
  //ananymous function
 
- let car=function(name){
+//  let car=function(name){
 
-    console.log("hello "+name);
+//     console.log("hello "+name);
     
- }
- car("alice")
+//  }
+//  car("alice")
+
+
+
+
+// function greet(){
+
+//     console.log("hey");
+    
+// }
+// greet(function(){
+
+//     console.log("first");
+    
+// })
+// console.log(greet);
+
+
+
+
+//not hoisted function expression
+
+greet("welcome")
+let greet=function asd(a){
+
+    console.log("hello " +a);
+    
+}
+
+
+
 
 
