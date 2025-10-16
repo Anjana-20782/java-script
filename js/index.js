@@ -113,11 +113,31 @@
 // console.log(add(5,3));
 
 
-  greet("Alice"); 
-function greet(name) {
-  console.log("Hello, " + name);
 
+//function declaration
+//   greet("Alice"); 
+// function greet(name) {
+//   console.log("Hello, " + name);
+
+// }
+
+//function expression
+let great=function add(a,b)
+{
+    let sums=a+b;
+    console.log(sums);
+    
 }
+ great(10,40)
 
+
+ //ananymous function
+
+ let car=function(name){
+
+    console.log("hello "+name);
+    
+ }
+ car("alice")
 
 
