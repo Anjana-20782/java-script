@@ -313,9 +313,17 @@ let arr2 = [1,2,4,6]
 
 // for of
 
-for(items of arr){
-        console.log(items)
-}
+// for(items of arr){
+//         console.log(items)
+// }
+
+// forEach
+
+arr.forEach( (item, index) => {
+        console.log(item)
+        console.log(index)
+});
+
 
 
 
