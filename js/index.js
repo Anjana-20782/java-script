@@ -319,10 +319,21 @@ let arr2 = [1,2,4,6]
 
 // forEach
 
-arr.forEach( (item, index) => {
-        console.log(item)
-        console.log(index)
-});
+// arr.forEach( (item, index) => {
+//         console.log(item)
+//         console.log(index)
+// });
+
+// arr methods
+
+// let x = arr.map((value,index)=>${index}-${value})
+// let x = arr.filter((value)=>value!="asd")
+// let x = arr.find((value)=>value=="asd")
+// let x = arr1.reduce((tot,val)=>tot + val,0)
+// let x = arr2.some(num=>num%2==0)
+let x = arr2.every(num=>num%2==0)
+
+console.log(x)
 
 
 
