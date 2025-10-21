@@ -293,15 +293,30 @@
 
 
 
-function asd(n){
+// function asd(n){
 
-    if(n==0){
+//     if(n==0){
 
-        return 1;
-    }
-    return n * asd(n-1);
+//         return 1;                //120
+//     }
+//     return n * asd(n-1);
+// }
+// console.log(asd(5));
+
+
+
+
+let arr = ['abhi','asd','fdsa']
+let arr1 = [1,2,3,4]
+let arr2 = [1,2,4,6]
+
+
+// for of
+
+for(items of arr){
+        console.log(items)
 }
-console.log(asd(5));
+
 
 
 
