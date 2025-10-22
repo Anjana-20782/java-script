@@ -306,34 +306,47 @@
 
 
 
-let arr = ['abhi','asd','fdsa']
-let arr1 = [1,2,3,4]
-let arr2 = [1,2,4,6]
+// let arr = ['abhi','asd','fdsa']
+// let arr1 = [1,2,3,4]
+// let arr2 = [1,2,4,6]
 
 
 // for of
 
 // for(items of arr){
-//         console.log(items)
+//         console.log(items)               //abhi asd fdsa
 // }
 
 // forEach
 
 // arr.forEach( (item, index) => {
 //         console.log(item)
-//         console.log(index)
+//         console.log(index)                  // 0 abhi 1 asd 2 fdsa
 // });
 
 // arr methods
 
-// let x = arr.map((value,index)=>${index}-${value})
-// let x = arr.filter((value)=>value!="asd")
-// let x = arr.find((value)=>value=="asd")
-// let x = arr1.reduce((tot,val)=>tot + val,0)
-// let x = arr2.some(num=>num%2==0)
-let x = arr2.every(num=>num%2==0)
+// let x = arr.map((value,index)=>${index}-${value})            // 0-abhi 1-asd 2-fdsa
+// let x = arr.filter((value)=>value!="asd")                    // 0:abhi 2:fdsa
+// let x = arr.find((value)=>value=="asd")                       //asd
+// let x = arr1.reduce((tot,val)=>tot + val,100)                      //110
+// let x = arr2.some(num=>num%2==0)                                    //true
+// let x = arr2.every(num=>num%2==0)                               //false
 
-console.log(x)
+// console.log(x)
+
+
+
+
+//json
+
+let obj={name:"milen",age:20,city:"surat"}
+
+
+let jsonobj=JSON.stringify(obj)
+// console.log(obj);
+console.log(jsonobj);
+
 
 
 
