@@ -305,5 +305,16 @@ console.log(b);        //11
 
 
 
+//call by reference
 
+
+a=[100]
+b=a
+b[0]+=1
+console.log(a);                 //101
+console.log(b);                 //101
+
+
+
+//sperad operator
 
