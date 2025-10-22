@@ -272,18 +272,38 @@
 
 // console.log(x)
 
+
+
+
+
+
 //json
 
-let obj = [
-  { name: "milen", age: 20, city: "surat" },
-  { name: "milen", age: 20, city: "surat" },
-  { name: "milen", age: 20, city: "surat" },
-  { name: "milen", age: 20, city: "surat" },
-];
+// let obj = [
+//   { name: "milen", age: 20, city: "surat" },
+//   { name: "milen", age: 20, city: "surat" },
+//   { name: "milen", age: 20, city: "surat" },
+//   { name: "milen", age: 20, city: "surat" },
+// ];
 
-let jsonobj = JSON.stringify(obj);
-// console.log(obj);
-console.log(jsonobj);
+// let jsonobj = JSON.stringify(obj);
+// // console.log(obj);
+// console.log(jsonobj);
 
-let obj1 = JSON.parse(jsonobj);
-console.log(obj1);
+// let obj1 = JSON.parse(jsonobj);
+// console.log(obj1);
+
+
+
+//call by value
+
+a=10;
+b=a;
+b+=1
+console.log(a);         //10
+console.log(b);        //11
+
+
+
+
+
