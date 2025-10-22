@@ -318,3 +318,9 @@ console.log(b);                 //101
 
 //sperad operator
 
+
+a=[100]
+b=[...a]
+b[0]+=1
+console.log(a);                 //100
+console.log(b);                 //101
