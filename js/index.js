@@ -463,3 +463,7 @@ stack.push(20);
 stack.push(30);
 
 console.log(stack);
+
+stack.pop();
+console.log(stack);
+
