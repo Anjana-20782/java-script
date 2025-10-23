@@ -421,3 +421,9 @@ students.add("valsan");
 
 console.log(students); // Output: Set(2) {"Abhi", "Rahul"}
 
+console.log(students.has("Abhi")); // true
+
+console.log(students.size); // 2
+
+students.delete
+console.log(students);
