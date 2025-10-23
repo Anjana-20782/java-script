@@ -456,19 +456,30 @@
 
 //stack
 
-let stack=[]
+// let stack=[]
 
-stack.push(10);
-stack.push(20);
-stack.push(30);
+// stack.push(10);
+// stack.push(20);
+// stack.push(30);
 
-console.log(stack);
+// console.log(stack);
 
-stack.pop();
-console.log(stack);
+// stack.pop();
+// console.log(stack);
 
-console.log(stack[stack.length-1]);
-console.log(stack.length===0);
+// console.log(stack[stack.length-1]);
+// console.log(stack.length===0);
+
+
+
+//queue
+
+let queue=[]
+
+queue.push("Anjana")
+queue.push("Pavan")
+queue.push("Abhijith")
+console.log(queue);
 
 
 
