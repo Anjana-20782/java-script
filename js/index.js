@@ -485,3 +485,8 @@ console.log(queue);
 queue.shift();
 console.log(queue);
 
+console.log(queue[queue.length-1]);
+console.log(queue.length===0);
+
+
+
