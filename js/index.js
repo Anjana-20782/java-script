@@ -297,30 +297,49 @@
 
 //call by value
 
-a=10;
-b=a;
-b+=1
-console.log(a);         //10
-console.log(b);        //11
+// a=10;
+// b=a;
+// b+=1
+// console.log(a);         //10
+// console.log(b);        //11
 
 
 
 //call by reference
 
 
-a=[100]
-b=a
-b[0]+=1
-console.log(a);                 //101
-console.log(b);                 //101
+// a=[100]
+// b=a
+// b[0]+=1
+// console.log(a);                 //101
+// console.log(b);                 //101
 
 
 
 //sperad operator
 
 
-a=[100]
-b=[...a]
-b[0]+=1
-console.log(a);                 //100
-console.log(b);                 //101
+// a=[100]
+// b=[...a]
+// b[0]+=1
+// console.log(a);                 //100
+// console.log(b);                 //101
+
+
+
+
+//shallow copy
+
+let users1={name:"anjana",age:20,adress:{city:"kochi",pincode:678004}}
+
+let users2=JSON.parse(JSON.stringify(users1))
+
+users2.adress.city="tvm"
+
+console.log(users1);
+console.log(users2);
+
+
+
+
+
