@@ -434,19 +434,32 @@
 //map
 
 
-let person = new Map([
-    ["name","abhi"],
-    ["age","21"],
-    ["city","aluva"],
-])
+// let person = new Map([
+//     ["name","abhi"],
+//     ["age","21"],
+//     ["city","aluva"],
+// ])
 
-console.log(person)
-person.set("place","kadungalloor")
-console.log(person)
-console.log(person.size)
-console.log(person.get("age"))
-console.log(person.has("age"))
-person.delete("place")
-console.log(person)
-person.clear()
-console.log(person)
+// console.log(person)
+// person.set("place","kadungalloor")
+// console.log(person)
+// console.log(person.size)
+// console.log(person.get("age"))
+// console.log(person.has("age"))
+// person.delete("place")
+// console.log(person)
+// person.clear()
+// console.log(person)
+
+
+
+
+//stack
+
+let stack=[]
+
+stack.push(10);
+stack.push(20);
+stack.push(30);
+
+console.log(stack);
