@@ -328,7 +328,7 @@
 
 
 
-//shallow copy
+//Deep copy
 
 // let users1={name:"anjana",age:20,adress:{city:"kochi",pincode:678004}}
 
@@ -344,14 +344,29 @@
 
 //shallow copy
 
-let users1={name:"anjana",age:20,adress:{city:"kochi",pincode:678004}}
+// let users1={name:"anjana",age:20,adress:{city:"kochi",pincode:678004}}
 
-let users2={...users1}
+// let users2={...users1}
 
-users2.adress.city="tvm"
+// users2.adress.city="tvm"
 
-console.log(users1);
-console.log(users2);
+// console.log(users1);
+// console.log(users2);
+
+
+
+
+//this
+
+obj={
+    a:5,
+    b:3,
+    c:function(){
+        console.log(this.a+this.b);
+        
+    }
+}
+obj.c()
 
 
 
