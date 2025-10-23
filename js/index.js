@@ -400,14 +400,24 @@
 
 
 
-obj={
-    name:"kiran",
-    fun:()=>{
+// obj={
+//     name:"kiran",
+//     fun:()=>{
 
-        console.log(this);
+//         console.log(this);
         
-    }
-}
+//     }
+// }
+
+
+
+
+//set
 
 obj.fun()
+
+let students = new Set(["abhi","rahul","abhi"]);
+students.add("valsan");
+
+console.log(students); // Output: Set(2) {"Abhi", "Rahul"}
 
