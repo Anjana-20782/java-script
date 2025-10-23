@@ -467,3 +467,6 @@ console.log(stack);
 stack.pop();
 console.log(stack);
 
+console.log(stack[stack.length-1]);
+
+
