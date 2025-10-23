@@ -414,16 +414,33 @@
 
 //set
 
-obj.fun()
+// obj.fun()
 
-let students = new Set(["abhi","rahul","abhi"]);
-students.add("valsan");
+// let students = new Set(["abhi","rahul","abhi"]);
+// students.add("valsan");
 
-console.log(students); // Output: Set(2) {"Abhi", "Rahul"}
+// console.log(students); // Output: Set(2) {"Abhi", "Rahul"}
 
-console.log(students.has("Abhi")); // true
+// console.log(students.has("Abhi")); // true
 
-console.log(students.size); // 2
+// console.log(students.size); // 2
 
-students.delete
-console.log(students);
+// students.delete
+// console.log(students);
+
+
+
+
+//map
+
+
+let person = new Map([
+    ["name","abhi"],
+    ["age","21"],
+    ["city","aluva"],
+])
+
+console.log(person)
+person.set("place","kadungalloor")
+console.log(person)
+console.log(person.size)
