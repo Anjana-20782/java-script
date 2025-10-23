@@ -373,14 +373,30 @@
 
 //inside a regular fn
 
-function asd(){
+// function asd(){
 
+//     console.log(this);
+    
+// }
+// asd()
+
+
+
+//inside constructor
+
+function person(name)
+{
     console.log(this);
+    this.name=name;
+    // this.greet=function(){
+    //     console.log(this);
+        
+    // }
     
 }
-asd()
 
-
-
+const p1=new person("anjana")
+console.log(p1);
+p1.greet
 
 
