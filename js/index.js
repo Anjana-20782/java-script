@@ -330,9 +330,23 @@
 
 //shallow copy
 
+// let users1={name:"anjana",age:20,adress:{city:"kochi",pincode:678004}}
+
+// let users2=JSON.parse(JSON.stringify(users1))
+
+// users2.adress.city="tvm"
+
+// console.log(users1);
+// console.log(users2);
+
+
+
+
+//shallow copy
+
 let users1={name:"anjana",age:20,adress:{city:"kochi",pincode:678004}}
 
-let users2=JSON.parse(JSON.stringify(users1))
+let users2={...users1}
 
 users2.adress.city="tvm"
 
