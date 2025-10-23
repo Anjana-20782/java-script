@@ -482,4 +482,6 @@ queue.push("Abhijith")
 console.log(queue);
 
 
+queue.shift();
+console.log(queue);
 
