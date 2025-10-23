@@ -336,8 +336,8 @@
 
 // users2.adress.city="tvm"
 
-// console.log(users1);
-// console.log(users2);
+// console.log(users1);                 //kochi
+// console.log(users2);                 //tvm
 
 
 
@@ -348,10 +348,10 @@
 
 // let users2={...users1}
 
-// users2.adress.city="tvm"
+// users2.adress.city="tvm"                             
 
-// console.log(users1);
-// console.log(users2);
+// console.log(users1);             //tvm
+// console.log(users2);             //tvm
 
 
 
@@ -360,11 +360,10 @@
 
 // obj={
 //     a:5,
-//     b:3,
+//     b:3,                                                     //8
 //     c:function(){
 //         //console.log(a+b)      //a is not defined
 //         console.log(this.a+this.b);
-        
 //     }
 // }
 // obj.c()
@@ -374,7 +373,7 @@
 //inside a regular fn
 
 // function asd(){
-
+                                            //window
 //     console.log(this);
     
 // }
@@ -384,19 +383,31 @@
 
 //inside constructor
 
-function person(name)
-{
-    console.log(this);
-    this.name=name;
-    this.greet=function(){
+// function person(name)
+// {
+//     console.log(this);
+//     this.name=name;
+//     this.greet=function(){
+//         console.log(this);
+        
+//     }
+    
+// }
+
+// const p1=new person("anjana")
+// console.log(p1);
+// p1.greet
+
+
+
+obj={
+    name:"kiran",
+    fun:()=>{
+
         console.log(this);
         
     }
-    
 }
 
-const p1=new person("anjana")
-console.log(p1);
-p1.greet
-
+obj.fun()
 
