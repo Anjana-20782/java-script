@@ -388,10 +388,10 @@ function person(name)
 {
     console.log(this);
     this.name=name;
-    // this.greet=function(){
-    //     console.log(this);
+    this.greet=function(){
+        console.log(this);
         
-    // }
+    }
     
 }
 
