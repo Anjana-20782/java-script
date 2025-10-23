@@ -358,15 +358,27 @@
 
 //this
 
-obj={
-    a:5,
-    b:3,
-    c:function(){
-        console.log(this.a+this.b);
+// obj={
+//     a:5,
+//     b:3,
+//     c:function(){
+//         //console.log(a+b)      //a is not defined
+//         console.log(this.a+this.b);
         
-    }
+//     }
+// }
+// obj.c()
+
+
+
+//inside a regular fn
+
+function asd(){
+
+    console.log(this);
+    
 }
-obj.c()
+asd()
 
 
 
