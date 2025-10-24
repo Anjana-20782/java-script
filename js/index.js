@@ -499,3 +499,4 @@ obj = {
     age:21
 
 }
+console.log(Object.keys(obj))
