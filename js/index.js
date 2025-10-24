@@ -504,3 +504,5 @@ console.log(Object.values(obj))
 console.log(Object.entries(obj))
 
 
+ let car = { brand: "Tesla", model: "Model 3", year: 2024 };
+
