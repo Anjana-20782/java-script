@@ -42,7 +42,7 @@
 // let b=56;
 // console.log(b);
 
-// console.log(String(a));  //55
+// console.log(String(a));  //557
 
 // 3)nested for loop
 
@@ -474,19 +474,28 @@
 
 //queue
 
-let queue=[]
+// let queue=[]
 
-queue.push("Anjana")
-queue.push("Pavan")
-queue.push("Abhijith")
-console.log(queue);
-
-
-queue.shift();
-console.log(queue);
-
-console.log(queue[queue.length-1]);
-console.log(queue.length===0);
+// queue.push("Anjana")
+// queue.push("Pavan")
+// queue.push("Abhijith")
+// console.log(queue);
 
 
+// queue.shift();
+// console.log(queue);
 
+// console.log(queue[queue.length-1]);
+// console.log(queue.length);
+
+
+
+    
+//object method
+
+obj = {
+    name:"abhijith",
+    city:"aluva",
+    age:21
+
+}
