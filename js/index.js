@@ -506,3 +506,4 @@ console.log(Object.entries(obj))
 
  let car = { brand: "Tesla", model: "Model 3", year: 2024 };
 
+ console.log(Object.keys(car));
