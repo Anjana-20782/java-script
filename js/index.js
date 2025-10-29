@@ -493,17 +493,25 @@
     
 //object method
 
-obj = {
-    name:"abhijith",
-    city:"aluva",
-    age:21
+// obj = {
+//     name:"abhijith",
+//     city:"aluva",
+//     age:21
 
-}
-console.log(Object.keys(obj))
-console.log(Object.values(obj))
-console.log(Object.entries(obj))
+// }
+// console.log(Object.keys(obj))
+// console.log(Object.values(obj))
+// console.log(Object.entries(obj))
 
 
- let car = { brand: "Tesla", model: "Model 3", year: 2024 };
+//  let car = { brand: "Tesla", model: "Model 3", year: 2024 };
 
- console.log(Object.keys(car));
+//  console.log(Object.keys(car));
+
+
+
+//setinterval
+
+setInterval(()=>{
+    document.writeln("*")              //********************* contiues/
+},1000)
