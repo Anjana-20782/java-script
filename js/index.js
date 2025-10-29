@@ -518,16 +518,23 @@
 
 
 
-i=1
-let x= setInterval(()=>{
-    document.writeln("*") 
-    i++                                  //9 times
-    if(i==10)
-    {
-        clearInterval(x)
-    }
-     },1000)
+// i=1
+// let x= setInterval(()=>{
+//     document.writeln("*") 
+//     i++                                  //9 times
+//     if(i==10)
+//     {
+//         clearInterval(x)
+//     }
+//      },1000)
 
 
+
+//settimeout
+
+setTimeout(()=>{
+
+    document.writeln("*")               //*
+},1000)
 
 
