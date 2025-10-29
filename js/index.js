@@ -538,13 +538,27 @@
 // },1000)
 
 
-function asd()
+// function asd()
+// {
+
+//      setTimeout(()=>{
+
+//     document.writeln("*")  
+//     asd()                                   //continues star
+//     },1000)
+// }
+// asd()
+
+
+
+
+//synchronous
+
+console.log("start");
+for(i=0;i<=10;i++)
 {
-
-     setTimeout(()=>{
-
-    document.writeln("*")  
-    asd()                                   //continues star
-    },1000)
+    console.log(i);
+    
 }
-asd()
+console.log("stop");
+
