@@ -532,9 +532,19 @@
 
 //settimeout
 
-setTimeout(()=>{
+// setTimeout(()=>{
 
-    document.writeln("*")               //*
-},1000)
+//     document.writeln("*")               //*
+// },1000)
 
 
+function asd()
+{
+
+     setTimeout(()=>{
+
+    document.writeln("*")  
+    asd()                                   //continues star
+    },1000)
+}
+asd()
