@@ -512,6 +512,22 @@
 
 //setinterval
 
-setInterval(()=>{
-    document.writeln("*")              //********************* contiues/
-},1000)
+// setInterval(()=>{
+//     document.writeln("*")              //********************* contiues/
+// },1000)
+
+
+
+i=1
+let x= setInterval(()=>{
+    document.writeln("*") 
+    i++                                  //9 times
+    if(i==10)
+    {
+        clearInterval(x)
+    }
+     },1000)
+
+
+
+
