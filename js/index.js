@@ -532,10 +532,12 @@
 
 //settimeout
 
+
 // setTimeout(()=>{
 
 //     document.writeln("*")               //*
 // },1000)
+
 
 
 // function asd()
@@ -554,11 +556,24 @@
 
 //synchronous
 
-console.log("start");
-for(i=0;i<=10;i++)
-{
-    console.log(i);
+// console.log("start");
+// for(i=0;i<=10;i++)
+// {
+//     console.log(i);                     //step-by-step
     
-}
-console.log("stop");
+// }
+// console.log("stop");
 
+
+
+//asynchronous
+
+console.log("start");
+setTimeout(()=>{
+    for(i=0;i<=10;i++)
+ {
+     console.log(i);                     //start
+                                        //stop
+ }                                    //numbers 
+})
+console.log("stop");
