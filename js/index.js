@@ -620,6 +620,8 @@ function greet(city,country)
     console.log(`hello ${this.name} from ${city},${country}`);
     
 }
-greet.call(person1,"palakkad","india")
-greet.apply(person2,["allapuzha","india"])
+greet.call(person1,"palakkad","india")                      //call
+greet.apply(person2,["allapuzha","india"])                  //apply
 
+let x=greet.bind(person1,"palakkad","india")                //bind
+x()
