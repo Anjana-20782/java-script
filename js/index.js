@@ -589,12 +589,26 @@
 // },0)
 // console.log("stop");
 
-console.log(typeof(null))
-console.log(null==undefined);
-console.log(null===undefined);
+// console.log(typeof(null))
+// console.log(null==undefined);
+// console.log(null===undefined);
 
 
-console.log([]==![]);
+// console.log([]==![]);
 
+
+
+
+//call
+
+let obj1={a:10,b:20}
+let obj2={c:function(){
+    console.log(this.a+this.b);
+    
+}}
+
+obj2.c()                    //nan
+a=obj2.c
+a.call(obj1)                //30
 
 
