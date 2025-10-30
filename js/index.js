@@ -579,12 +579,15 @@
 // console.log("stop");
 
 
-console.log("start");
-setTimeout(()=>{
-    for(i=0;i<=10;i++)
- {
-     console.log(i);                     //start
-                                        //stop
- }                                    //numbers 
-},0)
-console.log("stop");
+// console.log("start");
+// setTimeout(()=>{
+//     for(i=0;i<=10;i++)
+//  {
+//      console.log(i);                     //start
+//                                         //stop
+//  }                                    //numbers 
+// },0)
+// console.log("stop");
+
+console.log(typeof(null))
+
