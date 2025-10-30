@@ -612,3 +612,14 @@ a=obj2.c
 a.call(obj1)                //30
 
 
+let person1={name:"anjana"}
+let person2={name:"anandhu"}
+
+function greet(city,country)
+{
+    console.log(`hello ${this.name} from ${city},${country}`);
+    
+}
+greet.call(person1,"palakkad","india")
+greet.apply(person2,["allapuzha","india"])
+
