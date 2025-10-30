@@ -590,4 +590,5 @@
 // console.log("stop");
 
 console.log(typeof(null))
+console.log(null==undefined);
 
