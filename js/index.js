@@ -654,19 +654,39 @@
 
 //constructor in inheritance
 
-class Parent {
-  constructor(name) {
-    this.name = name;
-  }
+// class Parent {
+//   constructor(name) {
+//     this.name = name;
+//   }
+// }
+
+// class Child extends Parent {
+//   constructor(name, age) {
+//     super(name); // parent constructor വിളിക്കുന്നു
+//     this.age = age;
+//   }
+// }
+
+// let c = new Child("Anjana", 22);
+// console.log(c.name); // Anjana
+// console.log(c.age);  // 22
+
+
+
+
+//types in inheritance
+
+//single inheritance
+
+class Animal {
+  eat() { console.log("Eating..."); }
 }
 
-class Child extends Parent {
-  constructor(name, age) {
-    super(name); // parent constructor വിളിക്കുന്നു
-    this.age = age;
-  }
+class Dog extends Animal {
+  bark() { console.log("Barking..."); }
 }
 
-let c = new Child("Anjana", 22);
-console.log(c.name); // Anjana
-console.log(c.age);  // 22
+let d = new Dog();
+d.eat();
+d.bark();
+
