@@ -678,6 +678,23 @@
 
 //single inheritance
 
+// class Animal {
+//   eat() { console.log("Eating..."); }
+// }
+
+// class Dog extends Animal {
+//   bark() { console.log("Barking..."); }
+// }
+
+// let d = new Dog();
+// d.eat();
+// d.bark();
+
+
+
+
+//multilevel inheritance
+
 class Animal {
   eat() { console.log("Eating..."); }
 }
@@ -686,7 +703,13 @@ class Dog extends Animal {
   bark() { console.log("Barking..."); }
 }
 
-let d = new Dog();
-d.eat();
-d.bark();
+class Puppy extends Dog {
+  play() { console.log("Playing..."); }
+}
+
+let p = new Puppy();
+p.eat();
+p.bark();
+p.play();
+
 
