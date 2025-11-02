@@ -695,6 +695,27 @@
 
 //multilevel inheritance
 
+// class Animal {
+//   eat() { console.log("Eating..."); }
+// }
+
+// class Dog extends Animal {
+//   bark() { console.log("Barking..."); }
+// }
+
+// class Puppy extends Dog {
+//   play() { console.log("Playing..."); }
+// }
+
+// let p = new Puppy();
+// p.eat();
+// p.bark();
+// p.play();
+
+
+
+//hierarchial inheritance
+
 class Animal {
   eat() { console.log("Eating..."); }
 }
@@ -703,13 +724,14 @@ class Dog extends Animal {
   bark() { console.log("Barking..."); }
 }
 
-class Puppy extends Dog {
-  play() { console.log("Playing..."); }
+class Cat extends Animal {
+  meow() { console.log("Meowing..."); }
 }
 
-let p = new Puppy();
-p.eat();
-p.bark();
-p.play();
+let d = new Dog();
+let c = new Cat();
+
+d.eat();  c.eat();
+d.bark(); c.meow();
 
 
