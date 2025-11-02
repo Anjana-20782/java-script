@@ -629,20 +629,34 @@
 
 
 
+//inheritance simple example
 
+
+// class Parent {
+//   sayHello() {
+//     console.log("Hello from Parent");
+//   }
+// }
+
+// class Child extends Parent {
+//   sayHi() {
+//     console.log("Hi from Child");
+//   }
+// }
+
+// let c = new Child();
+// c.sayHello(); // inherited from Parent
+// c.sayHi();    // from Child
+
+
+
+
+
+//constructor in inheritance
 
 class Parent {
-  sayHello() {
-    console.log("Hello from Parent");
+  constructor(name) {
+    this.name = name;
   }
 }
 
-class Child extends Parent {
-  sayHi() {
-    console.log("Hi from Child");
-  }
-}
-
-let c = new Child();
-c.sayHello(); // inherited from Parent
-c.sayHi();    // from Child
