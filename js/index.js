@@ -660,3 +660,11 @@ class Parent {
   }
 }
 
+class Child extends Parent {
+  constructor(name, age) {
+    super(name); // parent constructor വിളിക്കുന്നു
+    this.age = age;
+  }
+}
+
+
