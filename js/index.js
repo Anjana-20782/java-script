@@ -716,22 +716,42 @@
 
 //hierarchial inheritance
 
-class Animal {
-  eat() { console.log("Eating..."); }
+// class Animal {
+//   eat() { console.log("Eating..."); }
+// }
+
+// class Dog extends Animal {
+//   bark() { console.log("Barking..."); }
+// }
+
+// class Cat extends Animal {
+//   meow() { console.log("Meowing..."); }
+// }
+
+// let d = new Dog();
+// let c = new Cat();
+
+// d.eat();  c.eat();
+// d.bark(); c.meow();
+
+
+
+//method overriding
+
+class Parent {
+  greet() {
+    console.log("Hello from Parent");
+  }
 }
 
-class Dog extends Animal {
-  bark() { console.log("Barking..."); }
+class Child extends Parent {
+  greet() {
+    console.log("Hello from Child");
+  }
 }
 
-class Cat extends Animal {
-  meow() { console.log("Meowing..."); }
-}
+let c = new Child();
+c.greet(); // Hello from Child
 
-let d = new Dog();
-let c = new Cat();
-
-d.eat();  c.eat();
-d.bark(); c.meow();
 
 
