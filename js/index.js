@@ -667,4 +667,6 @@ class Child extends Parent {
   }
 }
 
-
+let c = new Child("Anjana", 22);
+console.log(c.name); // Anjana
+console.log(c.age);  // 22
