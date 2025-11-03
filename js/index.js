@@ -272,11 +272,6 @@
 
 // console.log(x)
 
-
-
-
-
-
 //json
 
 // let obj = [
@@ -293,8 +288,6 @@
 // let obj1 = JSON.parse(jsonobj);
 // console.log(obj1);
 
-
-
 //call by value
 
 // a=10;
@@ -303,10 +296,7 @@
 // console.log(a);         //10
 // console.log(b);        //11
 
-
-
 //call by reference
-
 
 // a=[100]
 // b=a
@@ -314,19 +304,13 @@
 // console.log(a);                 //101
 // console.log(b);                 //101
 
-
-
 //sperad operator
-
 
 // a=[100]
 // b=[...a]
 // b[0]+=1
 // console.log(a);                 //100
 // console.log(b);                 //101
-
-
-
 
 //Deep copy
 
@@ -339,22 +323,16 @@
 // console.log(users1);                 //kochi
 // console.log(users2);                 //tvm
 
-
-
-
 //shallow copy
 
 // let users1={name:"anjana",age:20,adress:{city:"kochi",pincode:678004}}
 
 // let users2={...users1}
 
-// users2.adress.city="tvm"                             
+// users2.adress.city="tvm"
 
 // console.log(users1);             //tvm
 // console.log(users2);             //tvm
-
-
-
 
 //this
 
@@ -368,18 +346,14 @@
 // }
 // obj.c()
 
-
-
 //inside a regular fn
 
 // function asd(){
-                                            //window
+//window
 //     console.log(this);
-    
+
 // }
 // asd()
-
-
 
 //inside constructor
 
@@ -389,28 +363,23 @@
 //     this.name=name;
 //     this.greet=function(){
 //         console.log(this);
-        
+
 //     }
-    
+
 // }
 
 // const p1=new person("anjana")
 // console.log(p1);
 // p1.greet
 
-
-
 // obj={
 //     name:"kiran",
 //     fun:()=>{
 
 //         console.log(this);
-        
+
 //     }
 // }
-
-
-
 
 //set
 
@@ -428,11 +397,7 @@
 // students.delete
 // console.log(students);
 
-
-
-
 //map
-
 
 // let person = new Map([
 //     ["name","abhi"],
@@ -451,9 +416,6 @@
 // person.clear()
 // console.log(person)
 
-
-
-
 //stack
 
 // let stack=[]
@@ -470,8 +432,6 @@
 // console.log(stack[stack.length-1]);
 // console.log(stack.length===0);
 
-
-
 //queue
 
 // let queue=[]
@@ -481,16 +441,12 @@
 // queue.push("Abhijith")
 // console.log(queue);
 
-
 // queue.shift();
 // console.log(queue);
 
 // console.log(queue[queue.length-1]);
 // console.log(queue.length);
 
-
-
-    
 //object method
 
 // obj = {
@@ -503,12 +459,9 @@
 // console.log(Object.values(obj))
 // console.log(Object.entries(obj))
 
-
 //  let car = { brand: "Tesla", model: "Model 3", year: 2024 };
 
 //  console.log(Object.keys(car));
-
-
 
 //setinterval
 
@@ -516,11 +469,9 @@
 //     document.writeln("*")              //********************* contiues/
 // },1000)
 
-
-
 // i=1
 // let x= setInterval(()=>{
-//     document.writeln("*") 
+//     document.writeln("*")
 //     i++                                  //9 times
 //     if(i==10)
 //     {
@@ -528,31 +479,23 @@
 //     }
 //      },1000)
 
-
-
 //settimeout
-
 
 // setTimeout(()=>{
 
 //     document.writeln("*")               //*
 // },1000)
 
-
-
 // function asd()
 // {
 
 //      setTimeout(()=>{
 
-//     document.writeln("*")  
+//     document.writeln("*")
 //     asd()                                   //continues star
 //     },1000)
 // }
 // asd()
-
-
-
 
 //synchronous
 
@@ -560,11 +503,9 @@
 // for(i=0;i<=10;i++)
 // {
 //     console.log(i);                     //step-by-step
-    
+
 // }
 // console.log("stop");
-
-
 
 //asynchronous
 
@@ -574,10 +515,9 @@
 //  {
 //      console.log(i);                     //start
 //                                         //stop
-//  }                                    //numbers 
+//  }                                    //numbers
 // },1000)
 // console.log("stop");
-
 
 // console.log("start");
 // setTimeout(()=>{
@@ -585,7 +525,7 @@
 //  {
 //      console.log(i);                     //start
 //                                         //stop
-//  }                                    //numbers 
+//  }                                    //numbers
 // },0)
 // console.log("stop");
 
@@ -593,24 +533,19 @@
 // console.log(null==undefined);
 // console.log(null===undefined);
 
-
 // console.log([]==![]);
-
-
-
 
 //call
 
 // let obj1={a:10,b:20}
 // let obj2={c:function(){
 //     console.log(this.a+this.b);
-    
+
 // }}
 
 // obj2.c()                    //nan
 // a=obj2.c
 // a.call(obj1)                //30
-
 
 // let person1={name:"anjana"}
 // let person2={name:"anandhu"}
@@ -618,7 +553,7 @@
 // function greet(city,country)
 // {
 //     console.log(`hello ${this.name} from ${city},${country}`);
-    
+
 // }
 // greet.call(person1,"palakkad","india")                      //call
 // greet.apply(person2,["allapuzha","india"])                  //apply
@@ -628,9 +563,7 @@
 
 
 
-
 //inheritance simple example
-
 
 // class Parent {
 //   sayHello() {
@@ -644,30 +577,41 @@
 //   }
 // }
 
-// let c = new Child();
+// let c = new Child();//new keyword is using create a new object
 // c.sayHello(); // inherited from Parent
 // c.sayHi();    // from Child
 
 
 
-
-
 //constructor in inheritance
 
-// class Parent {
-//   constructor(name) {
-//     this.name = name;
-//   }
+//  class Parent {
+//    constructor(name) {            //constructoe is a special method inside a class that automatically run whem using a anew obect using new
+//     this.name = name;            //this means object reference
+//    }
+// greet()
+// {
+//     console.log(`hello,${this.name}`);
 // }
 
-// class Child extends Parent {
-//   constructor(name, age) {
-//     super(name); // parent constructor വിളിക്കുന്നു
-//     this.age = age;
-//   }
-// }
 
-// let c = new Child("Anjana", 22);
+//  }
+
+//  class Child extends Parent {
+//    constructor(name, age) {
+//      super(name); // parent constructor വിളിക്കുന്നു
+//      this.age = age;
+//    }
+// Show()
+// {
+//     console.log(`${this.name} ${this.age} years old`);
+    
+// }
+//  }
+
+//  let c = new Child("Anjana", 22);
+// c.greet()
+// c.Show()
 // console.log(c.name); // Anjana
 // console.log(c.age);  // 22
 
@@ -689,7 +633,6 @@
 // let d = new Dog();
 // d.eat();
 // d.bark();
-
 
 
 
@@ -716,23 +659,26 @@
 
 //hierarchial inheritance
 
-// class Animal {
-//   eat() { console.log("Eating..."); }
-// }
+class Animal {
+  eat() { console.log("Eating..."); }
+}
 
-// class Dog extends Animal {
-//   bark() { console.log("Barking..."); }
-// }
+class Dog extends Animal {
+  bark() { console.log("Barking..."); }
+}
 
-// class Cat extends Animal {
-//   meow() { console.log("Meowing..."); }
-// }
+class Cat extends Animal {
+  meow() { console.log("Meowing..."); }
+}
 
-// let d = new Dog();
-// let c = new Cat();
+let d = new Dog();
+let c = new Cat();
 
-// d.eat();  c.eat();
-// d.bark(); c.meow();
+d.eat();
+c.eat();
+d.bark();
+ c.meow();
+
 
 
 
@@ -755,20 +701,18 @@
 
 
 
-class Parent {
-  constructor() {
-    console.log("Parent constructor called");
-  }
-}
 
-class Child extends Parent {
-  constructor() {
-     super(); // 👈 parent constructor runs first
-    console.log("Child constructor called");
-  }
-}
+// class Parent {
+//   constructor() {
+//     console.log("Parent constructor called");
+//   }
+// }
 
-let obj = new Child();
+// class Child extends Parent {
+//   constructor() {
+//     super(); // 👈 parent constructor runs first
+//     console.log("Child constructor called");
+//   }
+// }
 
-
-
+// let obj = new Child();
