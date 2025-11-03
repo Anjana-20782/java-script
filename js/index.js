@@ -738,20 +738,37 @@
 
 //method overriding
 
+// class Parent {
+//   greet() {
+//     console.log("Hello from Parent");
+//   }
+// }
+
+// class Child extends Parent {
+//   greet() {
+//     console.log("Hello from Child");
+//   }
+// }
+
+// let c = new Child();
+// c.greet(); // Hello from Child
+
+
+
 class Parent {
-  greet() {
-    console.log("Hello from Parent");
+  constructor() {
+    console.log("Parent constructor called");
   }
 }
 
 class Child extends Parent {
-  greet() {
-    console.log("Hello from Child");
+  constructor() {
+     super(); // 👈 parent constructor runs first
+    console.log("Child constructor called");
   }
 }
 
-let c = new Child();
-c.greet(); // Hello from Child
+let obj = new Child();
 
 
 
