@@ -535,6 +535,8 @@
 
 // console.log([]==![]);
 
+
+
 //call
 
 // let obj1={a:10,b:20}
@@ -659,25 +661,25 @@
 
 //hierarchial inheritance
 
-class Animal {
-  eat() { console.log("Eating..."); }
-}
+// class Animal {
+//   eat() { console.log("Eating..."); }
+// }
 
-class Dog extends Animal {
-  bark() { console.log("Barking..."); }
-}
+// class Dog extends Animal {
+//   bark() { console.log("Barking..."); }
+// }
 
-class Cat extends Animal {
-  meow() { console.log("Meowing..."); }
-}
+// class Cat extends Animal {
+//   meow() { console.log("Meowing..."); }
+// }
 
-let d = new Dog();
-let c = new Cat();
+// let d = new Dog();
+// let c = new Cat();
 
-d.eat();
-c.eat();
-d.bark();
- c.meow();
+// d.eat();
+// c.eat();
+// d.bark();
+//  c.meow();
 
 
 
@@ -716,3 +718,19 @@ d.bark();
 // }
 
 // let obj = new Child();
+
+
+
+const animal = {
+  eat() {
+    console.log("Animal eats food");
+  }
+};
+
+const dog = Object.create(animal); // 🐕 dog inherits from animal
+dog.bark = function() {
+  console.log("Dog barks");
+};
+
+dog.eat();  // ✅ comes from 'animal' (inherited)
+dog.bark(); // ✅ from 'dog' itself

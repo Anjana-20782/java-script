@@ -10,3 +10,135 @@
     <script src="./js/index.js"></script>
 </body>
 </html>
+
+<!-- <h1>🎮 Ball Movement Game</h1>
+
+  <div class="game-container" id="game">
+    <div id="player"></div>
+  </div>
+
+  🕹️ On-screen Controls
+  <div class="controls">
+    <div class="control-row">
+      <button id="up">⬆️</button>
+    </div>
+    <div class="control-row">
+      <button id="left">⬅️</button>
+      <button id="down">⬇️</button>
+      <button id="right">➡️</button>
+    </div>
+  </div>  -->
+
+
+  
+
+ <!-- const player = document.getElementById("player");
+const game = document.getElementById("game");
+
+// Player position
+let x = 100;
+let y = 100;
+const step = 20; // movement distance
+
+// 🧭 Move function
+function movePlayer(direction) {
+  const gameWidth = game.offsetWidth;
+  const gameHeight = game.offsetHeight;
+  const playerSize = player.offsetWidth;
+
+  if (direction === "up" && y + playerSize + step <= gameHeight) y += step;
+  else if (direction === "down" && y - step >= 0) y -= step;
+  else if (direction === "left" && x - step >= 0) x -= step;
+  else if (direction === "right" && x + playerSize + step <= gameWidth) x += step;
+
+  updatePosition();
+}
+
+// 🌀 Update position visually
+function updatePosition() {
+  player.style.left = `${x}px`;
+  player.style.bottom = `${y}px`;
+}
+
+// 🎮 Keyboard controls (W, A, S, D)
+document.addEventListener("keydown", (e) => {
+  if (e.key === "w" || e.key === "W") movePlayer("up");
+  if (e.key === "s" || e.key === "S") movePlayer("down");
+  if (e.key === "a" || e.key === "A") movePlayer("left");
+  if (e.key === "d" || e.key === "D") movePlayer("right");
+});
+
+// 🕹️ Button controls
+document.getElementById("up").addEventListener("click", () => movePlayer("up"));
+document.getElementById("down").addEventListener("click", () => movePlayer("down"));
+document.getElementById("left").addEventListener("click", () => movePlayer("left"));
+document.getElementById("right").addEventListener("click", () => movePlayer("right")); -->
+
+
+<!--body {
+  background: linear-gradient(to right, #74ebd5, #acb6e5);
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-top: 20px;
+  color: #333;
+}
+
+.game-container {
+  position: relative;
+  width: 90vw;
+  height: 60vh;
+  margin: 30px auto;
+  border: 4px solid #333;
+  border-radius: 15px;
+  background: #fff;
+  overflow: hidden;
+}
+
+/* 🟠 Player (Ball) */
+#player {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: radial-gradient(circle at 30% 30%, #ff3d00, #b71c1c);
+  border-radius: 50%;
+  left: 100px;
+  bottom: 100px;
+  transition: all 0.2s ease;
+}
+
+/* 🎮 Buttons */
+.controls {
+  margin-top: 20px;
+}
+
+.control-row {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+
+button {
+  font-size: 25px;
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  border: none;
+  border-radius: 10px;
+  background: white;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #333;
+  color: white;
+}-->
+
