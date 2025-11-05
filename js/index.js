@@ -830,32 +830,57 @@
 // s1.show(); // ✅ only one line to display all
 
 
-console.log("first");
 
-b=10
-console.log(b/0);
-// console.log(datas);
-
-console.log("last");
+//exception handling
 
 
+// console.log("first");
+
+// b=10
+// console.log(b/0);
+// // console.log(datas);
+
+// console.log("last");
 
 
 
-console.log("start");
-try{
-  a=10;
-  // console.log(a/0);
-  console.log(data);
-}
-catch(e)
+
+
+// console.log("start");
+// try{
+//   a=10;
+//   // console.log(a/0);
+//   console.log(data);
+// }
+// catch(e)
+// {
+//   console.log(e);
+  
+// }
+// finally{
+//   console.log("finally block executed");
+  
+// }
+// console.log("end");
+
+
+
+//callback hell
+
+function getuser(callback)
 {
-  console.log(e);
-  
+  setTimeout(()=>{
+            console.log("fetched user");
+            callback({id:1,name:"anjana"})
+            
+  },2000)
 }
-finally{
-  console.log("finally block executed");
-  
-}
-console.log("end");
 
+function getposts(userid,callback)
+{
+setTimeout(()=>{
+            console.log("fetched post");
+            callback([{id:101,title:"palakkad"}])
+            
+  },2000)
+}
