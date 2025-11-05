@@ -908,21 +908,89 @@
 
 //promise
 
-const promise=new Promise((resolve,reject)=>{
+// const promise=new Promise((resolve,reject)=>{
 
-  // const success=false
-  const success=true
-  if(success)
-  {
-    resolve("promise resolved")
-  }
-  else{
-    reject("error")
-  }
-})
+//   // const success=false
+//   const success=true
+//   if(success)
+//   {
+//     resolve("promise resolved")
+//   }
+//   else{
+//     reject("error")
+//   }
+// })
 
-promise.then((message)=>
+// promise.then((message)=>
+// {
+//   console.log(message);
+  
+// })
+// .catch((error)=>{
+
+//   console.log(error);
+  
+// })
+
+
+
+//promise chaning
+
+// const promise=new Promise((resolve,reject)=>{
+
+//   // const success=false
+//   const success=true
+//   if(success)
+//   {
+//     resolve("promise resolved")
+//   }
+//   else{
+//     reject("error")
+//   }
+// })
+
+// promise.then((message)=>
+// {
+//   console.log(message);
+//   return "second promised"
+  
+// })
+// .then((message)=>{
+//   console.log(message);
+  
+// })
+// .catch((error)=>{
+
+//   console.log(error);
+  
+// })
+
+
+
+
+
+function loginUser(username,password)
 {
+ return new Promise((resolve,reject)=>{
+
+  
+  setTimeout(()=>{
+
+    if(username=="anjana" && password=="abc123")
+    {
+      resolve("login successed")
+    }
+    else{
+      reject("login fail")
+    }
+
+  },2000)
+
+})
+}
+
+loginUser("anjana","abc123").then((message)=>{
+
   console.log(message);
   
 })
@@ -931,3 +999,4 @@ promise.then((message)=>
   console.log(error);
   
 })
+
