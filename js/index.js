@@ -738,22 +738,54 @@
 
 //multiple inheritaance
 
-const CanFly = {
-  fly() { console.log("Flying high!"); }
-};
+// const CanFly = {
+//   fly() { console.log("Flying high!"); }
+// };
 
-const CanSwim = {
-  swim() { console.log("Swimming fast!"); }
-};
+// const CanSwim = {
+//   swim() { console.log("Swimming fast!"); }
+// };
 
-class Animal {
-  eat() { console.log("Eating..."); }
+// class Animal {
+//   eat() { console.log("Eating..."); }
+// }
+
+// class Duck extends Animal {}
+// Object.assign(Duck.prototype, CanFly, CanSwim); // mixin
+
+// const d = new Duck();
+// d.eat();
+// d.fly();
+// d.swim();
+
+
+
+// Parent class
+class Person {
+  name = "Unknown";
+  age = 0;
+  country = "India";
 }
 
-class Duck extends Animal {}
-Object.assign(Duck.prototype, CanFly, CanSwim); // mixin
+// Child class
+class Student extends Person {
+  grade = "Not Assigned";
+  rollNo = 0;
+}
 
-const d = new Duck();
-d.eat();
-d.fly();
-d.swim();
+// Create object
+const s1 = new Student();
+
+// set values
+s1.name = "Anjana";
+s1.age = 20;
+s1.country = "India";
+s1.grade = "BSc";
+s1.rollNo = 21;
+
+// print all details
+console.log("Name:", s1.name);
+console.log("Age:", s1.age);
+console.log("Country:", s1.country);
+console.log("Grade:", s1.grade);
+console.log("Roll No:", s1.rollNo);
