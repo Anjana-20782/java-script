@@ -792,11 +792,36 @@
 
 
 
+// class Person {
+//   name = "Anjana";
+//   age = 20;
+//   country = "India";
+
+//   // ❌ you can't write console.log here directly using this (invalid outside method)
+//   console.log(this.name); // ❌ error
+// }
+
+
+
 class Person {
   name = "Anjana";
   age = 20;
   country = "India";
-
-  // ❌ you can't write console.log here directly using this (invalid outside method)
-  console.log(this.name); // ❌ error
 }
+
+class Student extends Person {
+  grade = "BSc";
+  rollNo = 21;
+
+  // 👉 here 'this' works because it's inside a method
+  show = () => {
+    console.log("Name:", this.name);
+    console.log("Age:", this.age);
+    console.log("Country:", this.country);
+    console.log("Grade:", this.grade);
+    console.log("Roll No:", this.rollNo);
+  };
+}
+
+const s1 = new Student();
+s1.show(); // ✅ only one line to display all
