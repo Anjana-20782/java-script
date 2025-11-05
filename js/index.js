@@ -797,31 +797,53 @@
 //   age = 20;
 //   country = "India";
 
-//   // ❌ you can't write console.log here directly using this (invalid outside method)
-//   console.log(this.name); // ❌ error
+//   show()
+//   {
+//      console.log(this.name);
+//   }
+// }
+// let s1=new Person()
+// s1.show() 
+
+
+// class Person {
+//   name = "Anjana";
+//   age = 20;
+//   country = "India";
 // }
 
+// class Student extends Person {
+//   grade = "BSc";
+//   rollNo = 21;
+
+//   // 👉 here 'this' works because it's inside a method
+//   show = () => {
+//     console.log("Name:", this.name);
+//     console.log("Age:", this.age);
+//     console.log("Country:", this.country);
+//     console.log("Grade:", this.grade);
+//     console.log("Roll No:", this.rollNo);
+//   };
+// }
+
+// const s1 = new Student();
+// s1.show(); // ✅ only one line to display all
 
 
-class Person {
-  name = "Anjana";
-  age = 20;
-  country = "India";
+console.log("start");
+try{
+  a=10;
+  console.log(a/0);
+  // console.log(data);
 }
-
-class Student extends Person {
-  grade = "BSc";
-  rollNo = 21;
-
-  // 👉 here 'this' works because it's inside a method
-  show = () => {
-    console.log("Name:", this.name);
-    console.log("Age:", this.age);
-    console.log("Country:", this.country);
-    console.log("Grade:", this.grade);
-    console.log("Roll No:", this.rollNo);
-  };
+catch(e)
+{
+  console.log(e);
+  
 }
+finally{
+  console.log("finally block executed");
+  
+}
+console.log("end");
 
-const s1 = new Student();
-s1.show(); // ✅ only one line to display all
