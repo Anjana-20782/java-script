@@ -884,3 +884,22 @@ setTimeout(()=>{
             
   },2000)
 }
+function getcomment(postid,callback)
+{
+setTimeout(()=>{
+            console.log("fetched comment");
+            callback(["nice work","amazing"])
+            
+  },2000)
+}
+
+getuser(function(user)
+{
+ getposts(user.id,function(posts){
+  getcomment(posts[0].id,function(comment)
+ {
+  console.log(comment);
+  
+ })
+ })
+})
