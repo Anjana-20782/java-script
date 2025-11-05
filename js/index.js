@@ -867,39 +867,67 @@
 
 //callback hell
 
-function getuser(callback)
-{
-  setTimeout(()=>{
-            console.log("fetched user");
-            callback({id:1,name:"anjana"})
+// function getuser(callback)
+// {
+//   setTimeout(()=>{
+//             console.log("fetched user");
+//             callback({id:1,name:"anjana"})
             
-  },2000)
-}
+//   },2000)
+// }
 
-function getposts(userid,callback)
-{
-setTimeout(()=>{
-            console.log("fetched post");
-            callback([{id:101,title:"palakkad"}])
+// function getposts(userid,callback)
+// {
+// setTimeout(()=>{
+//             console.log("fetched post");
+//             callback([{id:101,title:"palakkad"}])
             
-  },2000)
-}
-function getcomment(postid,callback)
-{
-setTimeout(()=>{
-            console.log("fetched comment");
-            callback(["nice work","amazing"])
+//   },2000)
+// }
+// function getcomment(postid,callback)
+// {
+// setTimeout(()=>{
+//             console.log("fetched comment");
+//             callback(["nice work","amazing"])
             
-  },2000)
-}
+//   },2000)
+// }
 
-getuser(function(user)
-{
- getposts(user.id,function(posts){
-  getcomment(posts[0].id,function(comment)
- {
-  console.log(comment);
+// getuser(function(user)
+// {
+//  getposts(user.id,function(posts){
+//   getcomment(posts[0].id,function(comment)
+//  {
+//   console.log(comment);
   
- })
- })
+//  })
+//  })
+// })
+
+
+
+//promise
+
+const promise=new Promise((resolve,reject)=>{
+
+  // const success=false
+  const success=true
+  if(success)
+  {
+    resolve("promise resolved")
+  }
+  else{
+    reject("error")
+  }
+})
+
+promise.then((message)=>
+{
+  console.log(message);
+  
+})
+.catch((error)=>{
+
+  console.log(error);
+  
 })
