@@ -760,32 +760,43 @@
 
 
 
-// Parent class
+// // Parent class
+// class Person {
+//   name = "Unknown";
+//   age = 0;
+//   country = "India";
+// }
+
+// // Child class
+// class Student extends Person {
+//   grade = "Not Assigned";
+//   rollNo = 0;
+// }
+
+// // Create object
+// const s1 = new Student();
+
+// // set values
+// s1.name = "Anjana";
+// s1.age = 20;
+// s1.country = "India";
+// s1.grade = "BSc";
+// s1.rollNo = 21;
+
+// // print all details
+// console.log("Name:", s1.name);
+// console.log("Age:", s1.age);
+// console.log("Country:", s1.country);
+// console.log("Grade:", s1.grade);
+// console.log("Roll No:", s1.rollNo);
+
+
+
 class Person {
-  name = "Unknown";
-  age = 0;
+  name = "Anjana";
+  age = 20;
   country = "India";
+
+  // ❌ you can't write console.log here directly using this (invalid outside method)
+  console.log(this.name); // ❌ error
 }
-
-// Child class
-class Student extends Person {
-  grade = "Not Assigned";
-  rollNo = 0;
-}
-
-// Create object
-const s1 = new Student();
-
-// set values
-s1.name = "Anjana";
-s1.age = 20;
-s1.country = "India";
-s1.grade = "BSc";
-s1.rollNo = 21;
-
-// print all details
-console.log("Name:", s1.name);
-console.log("Age:", s1.age);
-console.log("Country:", s1.country);
-console.log("Grade:", s1.grade);
-console.log("Roll No:", s1.rollNo);
