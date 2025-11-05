@@ -830,11 +830,23 @@
 // s1.show(); // ✅ only one line to display all
 
 
+console.log("first");
+
+b=10
+console.log(b/0);
+// console.log(datas);
+
+console.log("last");
+
+
+
+
+
 console.log("start");
 try{
   a=10;
-  console.log(a/0);
-  // console.log(data);
+  // console.log(a/0);
+  console.log(data);
 }
 catch(e)
 {
