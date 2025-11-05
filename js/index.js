@@ -721,16 +721,39 @@
 
 
 
-const animal = {
-  eat() {
-    console.log("Animal eats food");
-  }
+// const animal = {
+//   eat() {
+//     console.log("Animal eats food");
+//   }
+// };
+
+// const dog = Object.create(animal); // 🐕 dog inherits from animal
+// dog.bark = function() {
+//   console.log("Dog barks");
+// };
+
+// dog.eat();  // ✅ comes from 'animal' (inherited)
+// dog.bark(); // ✅ from 'dog' itself
+
+
+//multiple inheritaance
+
+const CanFly = {
+  fly() { console.log("Flying high!"); }
 };
 
-const dog = Object.create(animal); // 🐕 dog inherits from animal
-dog.bark = function() {
-  console.log("Dog barks");
+const CanSwim = {
+  swim() { console.log("Swimming fast!"); }
 };
 
-dog.eat();  // ✅ comes from 'animal' (inherited)
-dog.bark(); // ✅ from 'dog' itself
+class Animal {
+  eat() { console.log("Eating..."); }
+}
+
+class Duck extends Animal {}
+Object.assign(Duck.prototype, CanFly, CanSwim); // mixin
+
+const d = new Duck();
+d.eat();
+d.fly();
+d.swim();
