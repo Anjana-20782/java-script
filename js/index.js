@@ -969,34 +969,37 @@
 
 
 
-function loginUser(username,password)
-{
- return new Promise((resolve,reject)=>{
+// function loginUser(username,password)
+// {
+//  return new Promise((resolve,reject)=>{
 
   
-  setTimeout(()=>{
+//   setTimeout(()=>{
 
-    if(username=="anjana" && password=="abc123")
-    {
-      resolve("login successed")
-    }
-    else{
-      reject("login fail")
-    }
+//     if(username=="anjana" && password=="abc123")
+//     {
+//       resolve("login successed")
+//     }
+//     else{
+//       reject("login fail")
+//     }
 
-  },2000)
+//   },2000)
 
-})
-}
+// })
+// }
 
-loginUser("anjana","abc123").then((message)=>{
+// loginUser("anjana","abc123").then((message)=>{
 
-  console.log(message);
+//   console.log(message);
   
-})
-.catch((error)=>{
+// })
+// .catch((error)=>{
 
-  console.log(error);
+//   console.log(error);
   
-})
+// })
 
+let a=10;
+let a=40;
+console.log(a);
