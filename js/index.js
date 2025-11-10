@@ -1000,6 +1000,27 @@
   
 // })
 
-let a=10;
-let a=40;
-console.log(a);
+// let a=10;
+// let a=40;
+// console.log(a);
+
+
+class Parent {
+  constructor() {
+    this.surname = "Menon";
+  }
+}
+
+class Son extends Parent {
+  constructor(name) {
+    super();
+    this.name = name;
+  }
+}
+
+
+
+
+
+
+
