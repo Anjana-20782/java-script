@@ -1026,6 +1026,16 @@ class Daughter extends Parent {
   }
 }
 
+const s = new Son("Akhil");
+const d = new Daughter("Anjana",20);
+
+console.log(s.surname); // Menon
+console.log(d.surname); // Menon
+console.log(s.name);
+console.log(d.name);
+console.log(d.age);
+console.log(s.age);
+
 
 
 
