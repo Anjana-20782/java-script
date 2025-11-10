@@ -1005,38 +1005,63 @@
 // console.log(a);
 
 
-class Parent {
-  constructor() {
-    this.surname = "Menon";
-  }
-}
+// class Parent {
+//   constructor() {
+//     this.surname = "Menon";
+//   }
+// }
 
-class Son extends Parent {
+// class Son extends Parent {
+//   constructor(name) {
+//     super();
+//     this.name = name;
+//   }
+// }
+
+// class Daughter extends Parent {
+//   constructor(name,age) {
+//     super();
+//     this.name = name;
+//     this.age=age;
+//   }
+// }
+
+// const s = new Son("Akhil");
+// const d = new Daughter("Anjana",20);
+
+// console.log(s.surname); // Menon
+// console.log(d.surname); // Menon
+// console.log(s.name);
+// console.log(d.name);
+// console.log(d.age);
+// console.log(s.age);
+
+
+const Student = {
+  study() {
+    console.log("Studying...");
+  }
+};
+
+const Athlete = {
+  play() {
+    console.log("Playing sports...");
+  }
+};
+
+class Person {
   constructor(name) {
-    super();
     this.name = name;
   }
 }
 
-class Daughter extends Parent {
-  constructor(name,age) {
-    super();
-    this.name = name;
-    this.age=age;
-  }
-}
+// Merge multiple objects into one prototype
+Object.assign(Person.prototype, Student, Athlete);
 
-const s = new Son("Akhil");
-const d = new Daughter("Anjana",20);
-
-console.log(s.surname); // Menon
-console.log(d.surname); // Menon
-console.log(s.name);
-console.log(d.name);
-console.log(d.age);
-console.log(s.age);
-
-
+const p = new Person("Anu");
+p.study(); // Studying...
+p.play();  // Playing sports...
+console.log(p.name);
 
 
 
