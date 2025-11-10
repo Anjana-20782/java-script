@@ -1018,7 +1018,13 @@ class Son extends Parent {
   }
 }
 
-
+class Daughter extends Parent {
+  constructor(name,age) {
+    super();
+    this.name = name;
+    this.age=age;
+  }
+}
 
 
 
