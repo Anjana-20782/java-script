@@ -1111,4 +1111,8 @@ class Person {
   }
 }
 
-
+class Student extends Person {
+  constructor(name, grade) {
+    super(name); // calls Person’s constructor
+    this.grade = grade;
+  }
