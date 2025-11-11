@@ -806,25 +806,25 @@ d.eat();
 // s1.show() 
 
 
-class Person {
-  name = "Anjana";
-  age = 20;
-  country = "India";
-}
+// class Person {
+//   name = "Anjana";
+//   age = 20;
+//   country = "India";
+// }
 
-class Student extends Person {
-  grade = "BSc";
-  rollNo = 21;
+// class Student extends Person {
+//   grade = "BSc";
+//   rollNo = 21;
 
-  // 👉 here 'this' works because it's inside a method
-  show = () => {
-    console.log("Name:", this.name);
-    console.log("Age:", this.age);
-    console.log("Country:", this.country);
-    console.log("Grade:", this.grade);
-    console.log("Roll No:", this.rollNo);
-  };
-}
+//   // 👉 here 'this' works because it's inside a method
+//   show = () => {
+//     console.log("Name:", this.name);
+//     console.log("Age:", this.age);
+//     console.log("Country:", this.country);
+//     console.log("Grade:", this.grade);
+//     console.log("Roll No:", this.rollNo);
+//   };
+// }
 
 // const s1 = new Student();
 // s1.show(); // ✅ only one line to display all
@@ -1096,3 +1096,19 @@ class Student extends Person {
 // robot.speak(); // from SmartRobot
 // robot.clean(); // from Cleaner
 // robot.cook();  // from Cook
+
+
+
+
+
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
+
+  greet() {
+    console.log(`Hello, I’m ${this.name}`);
+  }
+}
+
+
