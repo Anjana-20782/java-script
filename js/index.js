@@ -1080,3 +1080,19 @@ const Cook = {
   }
 };
 
+// Child class (inherits both)
+class SmartRobot {
+  speak() {
+    console.log("🤖 Hello! I am your smart robot.");
+  }
+}
+
+// Mix both parents into SmartRobot’s prototype
+Object.assign(SmartRobot.prototype, Cleaner, Cook);
+
+// Create instance
+const robot = new SmartRobot();
+
+robot.speak(); // from SmartRobot
+robot.clean(); // from Cleaner
+robot.cook();  // from Cook
