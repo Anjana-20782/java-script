@@ -1116,3 +1116,10 @@ class Student extends Person {
     super(name); // calls Person’s constructor
     this.grade = grade;
   }
+
+  greet() {
+    super.greet(); // call parent method
+    console.log(`I’m in grade ${this.grade}`);
+  }
+}
+
