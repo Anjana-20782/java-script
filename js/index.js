@@ -624,16 +624,16 @@
 
 //single inheritance
 
-// class Animal {
-//   eat() { console.log("Eating..."); }
-// }
+class Animal {
+  eat() { console.log("Eating..."); }
+}
 
-// class Dog extends Animal {
-//   bark() { console.log("Barking..."); }
-// }
+class Dog extends Animal {
+  // bark() { console.log("Barking..."); }
+  }
 
-// let d = new Dog();
-// d.eat();
+let d = new Dog();
+d.eat();
 // d.bark();
 
 
@@ -1037,31 +1037,32 @@
 // console.log(s.age);
 
 
-const Student = {
-  study() {
-    console.log("Studying...");
-  }
-};
 
-const Athlete = {
-  play() {
-    console.log("Playing sports...");
-  }
-};
+// const Student = {
+//   study() {
+//     console.log("Studying...");
+//   }
+// };
 
-class Person {
-  constructor(name) {
-    this.name = name;
-  }
-}
+// const Athlete = {
+//   play() {
+//     console.log("Playing sports...");
+//   }
+// };
 
-// Merge multiple objects into one prototype
-Object.assign(Person.prototype, Student, Athlete);
+// class Person {
+//   constructor(name) {
+//     this.name = name;
+//   }
+// }
 
-const p = new Person("Anu");
-p.study(); // Studying...
-p.play();  // Playing sports...
-console.log(p.name);
+// // Merge multiple objects into one prototype
+// Object.assign(Person.prototype, Student, Athlete);
+
+// const p = new Person("Anu");
+// p.study(); // Studying...
+// p.play();  // Playing sports...
+// console.log(p.name);
 
 
 
