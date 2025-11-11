@@ -1123,3 +1123,9 @@ class Student extends Person {
   }
 }
 
+const s = new Student("Anjana", 10);
+s.greet();
+
+// Output:
+// Hello, I’m Anjana
+// I’m in grade 10
