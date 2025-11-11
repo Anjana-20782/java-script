@@ -806,25 +806,25 @@ d.eat();
 // s1.show() 
 
 
-// class Person {
-//   name = "Anjana";
-//   age = 20;
-//   country = "India";
-// }
+class Person {
+  name = "Anjana";
+  age = 20;
+  country = "India";
+}
 
-// class Student extends Person {
-//   grade = "BSc";
-//   rollNo = 21;
+class Student extends Person {
+  grade = "BSc";
+  rollNo = 21;
 
-//   // 👉 here 'this' works because it's inside a method
-//   show = () => {
-//     console.log("Name:", this.name);
-//     console.log("Age:", this.age);
-//     console.log("Country:", this.country);
-//     console.log("Grade:", this.grade);
-//     console.log("Roll No:", this.rollNo);
-//   };
-// }
+  // 👉 here 'this' works because it's inside a method
+  show = () => {
+    console.log("Name:", this.name);
+    console.log("Age:", this.age);
+    console.log("Country:", this.country);
+    console.log("Grade:", this.grade);
+    console.log("Roll No:", this.rollNo);
+  };
+}
 
 // const s1 = new Student();
 // s1.show(); // ✅ only one line to display all
@@ -1067,32 +1067,32 @@ d.eat();
 
 
 // First parent
-const Cleaner = {
-  clean() {
-    console.log("🧹 Cleaning the room...");
-  }
-};
+// const Cleaner = {
+//   clean() {
+//     console.log("🧹 Cleaning the room...");
+//   }
+// };
 
-// Second parent
-const Cook = {
-  cook() {
-    console.log("🍳 Cooking food...");
-  }
-};
+// // Second parent
+// const Cook = {
+//   cook() {
+//     console.log("🍳 Cooking food...");
+//   }
+// };
 
-// Child class (inherits both)
-class SmartRobot {
-  speak() {
-    console.log("🤖 Hello! I am your smart robot.");
-  }
-}
+// // Child class (inherits both)
+// class SmartRobot {
+//   speak() {
+//     console.log("🤖 Hello! I am your smart robot.");
+//   }
+// }
 
-// Mix both parents into SmartRobot’s prototype
-Object.assign(SmartRobot.prototype, Cleaner, Cook);
+// // Mix both parents into SmartRobot’s prototype
+// Object.assign(SmartRobot.prototype, Cleaner, Cook);
 
-// Create instance
-const robot = new SmartRobot();
+// // Create instance
+// const robot = new SmartRobot();
 
-robot.speak(); // from SmartRobot
-robot.clean(); // from Cleaner
-robot.cook();  // from Cook
+// robot.speak(); // from SmartRobot
+// robot.clean(); // from Cleaner
+// robot.cook();  // from Cook
