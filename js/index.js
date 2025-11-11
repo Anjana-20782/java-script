@@ -1066,3 +1066,17 @@ d.eat();
 
 
 
+// First parent
+const Cleaner = {
+  clean() {
+    console.log("🧹 Cleaning the room...");
+  }
+};
+
+// Second parent
+const Cook = {
+  cook() {
+    console.log("🍳 Cooking food...");
+  }
+};
+
