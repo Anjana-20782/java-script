@@ -1146,6 +1146,15 @@ class Student{
   {
     this.name=name;
   }
- 
+  getMark()
+  {
+    return this.mark;
+  }
+  setMark(mark)
+  {
+    this.mark=mark;
+  }
+}
+
 
 
