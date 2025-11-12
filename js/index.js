@@ -1155,6 +1155,7 @@ class Student{
     this.mark=mark;
   }
 }
-
-
-
+var std=new Student();
+std.getName("anu")
+std.getMark(45)
+console.log(std.getName()+" "+std.getMark());
