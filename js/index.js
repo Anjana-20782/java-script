@@ -1101,31 +1101,43 @@ d.eat();
 
 
 
-class Person {
-  constructor(name) {
-    this.name = name;
-  }
+// class Person {
+//   constructor(name) {
+//     this.name = name;
+//   }
 
-  greet() {
-    console.log(`Hello, I’m ${this.name}`);
-  }
-}
+//   greet() {
+//     console.log(`Hello, I’m ${this.name}`);
+//   }
+// }
 
-class Student extends Person {
-  constructor(name, grade) {
-    super(name); // calls Person’s constructor
-    this.grade = grade;
-  }
+// class Student extends Person {
+//   constructor(name, grade) {
+//     super(name); // calls Person’s constructor
+//     this.grade = grade;
+//   }
 
-  greet() {
-    super.greet(); // call parent method
-    console.log(`I’m in grade ${this.grade}`);
-  }
-}
+//   greet() {
+//     super.greet(); // call parent method
+//     console.log(`I’m in grade ${this.grade}`);
+//   }
+// }
 
-const s = new Student("Anjana", 10);
-s.greet();
+// const s = new Student("Anjana", 10);
+// s.greet();
 
 // Output:
 // Hello, I’m Anjana
 // I’m in grade 10
+
+
+class Student{
+
+  constructor()
+  {
+     this.name = "";  
+    this.mark = 0;
+  }
+
+
+
