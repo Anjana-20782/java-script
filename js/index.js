@@ -1138,6 +1138,14 @@ class Student{
      this.name = "";  
     this.mark = 0;
   }
-
+  getName()
+  {
+    return this.name;
+  }
+  setName(name)
+  {
+    this.name=name;
+  }
+ 
 
 
