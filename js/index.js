@@ -1172,4 +1172,4 @@ function isValidEmail(email) {
 
 // Test it
 console.log(isValidEmail("john.doe@example.com")); // true  
- 
+console.log(isValidEmail("wrong-email@"));          // false  
