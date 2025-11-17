@@ -1195,4 +1195,6 @@ const emailRegex = /[^\s@]+@[^\s@]+\.[^\s@]+/;
 
 if (email.match(emailRegex)) {
   console.log("Valid email");
-} 
+} else {
+  console.log("Invalid email");
+}
