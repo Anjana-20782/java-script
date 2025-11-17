@@ -1170,4 +1170,6 @@ function isValidEmail(email) {
   return regex.test(email);
 }
 
-// false  
+// Test it
+console.log(isValidEmail("john.doe@example.com")); // true  
+ 
