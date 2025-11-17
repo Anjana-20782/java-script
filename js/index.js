@@ -624,16 +624,16 @@
 
 //single inheritance
 
-class Animal {
-  eat() { console.log("Eating..."); }
-}
+// class Animal {
+//   eat() { console.log("Eating..."); }
+// }
 
-class Dog extends Animal {
-  // bark() { console.log("Barking..."); }
-  }
+// class Dog extends Animal {
+//   // bark() { console.log("Barking..."); }
+//   }
 
-let d = new Dog();
-d.eat();
+// let d = new Dog();
+// d.eat();
 // d.bark();
 
 
@@ -1131,31 +1131,40 @@ d.eat();
 // I’m in grade 10
 
 
-class Student{
+// class Student{
 
-  constructor()
-  {
-     this.name = "";  
-    this.mark = 0;
-  }
-  getName()
-  {
-    return this.name;
-  }
-  setName(name)
-  {
-    this.name=name;
-  }
-  getMark()
-  {
-    return this.mark;
-  }
-  setMark(mark)
-  {
-    this.mark=mark;
-  }
-}
-var std=new Student();
-std.getName("anu")
-std.getMark(45)
-console.log(std.getName()+" "+std.getMark());
+//   constructor()
+//   {
+//      this.name = "";  
+//     this.mark = 0;
+//   }
+//   getName()
+//   {
+//     return this.name;
+//   }
+//   setName(name)
+//   {
+//     this.name=name;
+//   }
+//   getMark()
+//   {
+//     return this.mark;
+//   }
+//   setMark(mark)
+//   {
+//     this.mark=mark;
+//   }
+// }
+// var std=new Student();
+// std.getName("anu")
+// std.getMark(45)
+// console.log(std.getName()+" "+std.getMark());
+
+
+
+
+//regular expression
+
+function isValidEmail(email) {
+  const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+       // false  
