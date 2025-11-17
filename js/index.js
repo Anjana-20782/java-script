@@ -1182,4 +1182,5 @@ function isValidPhone(phone) {
   return regex.test(phone);
 }
 
- 
+ // Test it
+console.log(isValidPhone("123-456-7890")); // true  
