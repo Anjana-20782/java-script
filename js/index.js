@@ -1183,5 +1183,6 @@ function isValidPhone(phone) {
 }
 
  // Test it
-console.log(isValidPhone("123-456-7890")); // true  
 console.log(isValidPhone("(123).456.7890")); // true  
+console.log(isValidPhone("(123).456.7890")); // true  
+console.log(isValidPhone("123-456-7890")); // true  
