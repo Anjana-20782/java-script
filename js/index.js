@@ -1176,13 +1176,17 @@
 
 
 
-function isValidPhone(phone) {
-  // This allows optional parentheses around area code, and - or . or / as separators
-  const regex = /^(?:\d{3}|\(\d{3}\))([-\/\.])\d{3}\1\d{4}$/;
-  return regex.test(phone);
-}
+// function isValidPhone(phone) {
+//   // This allows optional parentheses around area code, and - or . or / as separators
+//   const regex = /^(?:\d{3}|\(\d{3}\))([-\/\.])\d{3}\1\d{4}$/;
+//   return regex.test(phone);
+// }
 
- // Test it
-console.log(isValidPhone("(123).456.7890")); // true  
-console.log(isValidPhone("(123).456.7890")); // true  
-console.log(isValidPhone("123-456-7890")); // true  
+//  // Test it
+// console.log(isValidPhone("(123).456.7890")); // true  
+// console.log(isValidPhone("(123).456.7890")); // true  
+// console.log(isValidPhone("123-456-7890")); // true  
+
+
+
+const email = "alice@example.com";
