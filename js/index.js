@@ -1165,11 +1165,17 @@
 
 //regular expression
 
-function isValidEmail(email) {
-  const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-  return regex.test(email);
-}
+// function isValidEmail(email) {
+//   const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+//   return regex.test(email);
+// }
 
-// Test it
-console.log(isValidEmail("john.doe@example.com")); // true  
-console.log(isValidEmail("wrong-email@"));          // false  
+// // Test it
+// console.log(isValidEmail("john.doe@example.com")); // true  
+// console.log(isValidEmail("wrong-email@"));          // false  
+
+
+
+function isValidPhone(phone) {
+  // This allows optional parentheses around area code, and - or . or / as separators
+  const regex = /^(?:\d{3}|\(\d{3}\))([-\/\.])\d{3}\1\d{4}$/;
