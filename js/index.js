@@ -1190,3 +1190,4 @@
 
 
 const email = "alice@example.com";
+const emailRegex = /[^\s@]+@[^\s@]+\.[^\s@]+/;
