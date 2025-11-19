@@ -1200,6 +1200,14 @@
 // }
 
 
-let num=7683648573;
-let regx=/[0-9]{10}/;
-console.log(regx.test(num));
+//regular expression
+
+// let num=7683648573;
+// let regx=/[0-9]{10}/;
+// console.log(regx.test(num));
+
+
+
+let asd="asdfgh"
+let regx=/asd/;
+console.log(regx.test(asd));
