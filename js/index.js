@@ -1189,12 +1189,17 @@
 
 
 
-const email = "alice@example.com";
-const emailRegex = /[^\s@]+@[^\s@]+\.[^\s@]+/;
+// const email = "alice@xample.com";
+// const emailRegex = /[^\s@]+@[^\s@]+\.[^\s@]+/;
 
 
-if (email.match(emailRegex)) {
-  console.log("Valid email");
-} else {
-  console.log("Invalid email");
-}
+// if (email.match(emailRegex)) {
+//   console.log("Valid email");
+// } else {
+//   console.log("Invalid email");
+// }
+
+
+let num=7683648573;
+let regx=/[0-9]{10}/;
+console.log(regx.test(num));
