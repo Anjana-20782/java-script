@@ -1208,6 +1208,11 @@
 
 
 
-let asd="asdfgh"
-let regx=/asd/;
-console.log(regx.test(asd));
+// let asd="asdfgh"
+// let regx=/asd/;
+// console.log(regx.test(asd));
+
+
+let asd="a"
+let regx=/[asd]/;
+console.log(regx.test(asd));   //any one
