@@ -1218,6 +1218,12 @@
 // console.log(regx.test(asd));   //any one
 
 
-let asd="Asd"
-let regx=/[asd]/i;
-console.log(regx.test(asd)); //case-insensitive
+// let asd="Asd"
+// let regx=/[asd]/i;
+// console.log(regx.test(asd)); //case-insensitive
+
+let asd=`hdfgh
+asdvbsdvfbs
+asdfghsfh`
+let regx=/^[asd]/m;
+console.log(regx.test(asd));
