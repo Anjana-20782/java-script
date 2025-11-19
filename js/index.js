@@ -1210,20 +1210,27 @@
 
 // let asd="asdfgh"
 // let regx=/asd/;
-// console.log(regx.test(asd));
+// console.log(regx.test(asd));   //no bracket check all contents
 
 
 // let asd="a"
 // let regx=/[asd]/;
-// console.log(regx.test(asd));   //any one
+// console.log(regx.test(asd));   //.  []-any one
 
 
 // let asd="Asd"
 // let regx=/[asd]/i;
-// console.log(regx.test(asd)); //case-insensitive
+// console.log(regx.test(asd)); //   i-case-insensitive
+
+// let asd=`hdfgh
+// asdvbsdvfbs
+// asdfghsfh`
+// let regx=/^[asd]/m;
+// console.log(regx.test(asd));   //starting ^,m multiple lines check the contents
+
 
 let asd=`hdfgh
-asdvbsdvfbs
+asdvbsdvfb
 asdfghsfh`
-let regx=/^[asd]/m;
-console.log(regx.test(asd));
+let regx=/[asd]$/m;
+console.log(regx.test(asd));    //$-ends with
