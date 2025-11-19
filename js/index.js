@@ -1229,8 +1229,14 @@
 // console.log(regx.test(asd));   //starting ^,m multiple lines check the contents
 
 
-let asd=`hdfgh
-asdvbsdvfb
-asdfghsfh`
-let regx=/[asd]$/m;
-console.log(regx.test(asd));    //$-ends with
+// let asd=`hdfgh
+// asdvbsdvfb
+// asdfghsfh`
+// let regx=/[asd]$/m;
+// console.log(regx.test(asd));    //$-ends with
+
+
+let asd="asdfgh 456789"
+let regx=/\s/;
+console.log(regx.test(asd));    //\d-digits,\w-chacters,letters,numbers,W-non characters,D-nondigit,
+                                   //s-check the whitespace
